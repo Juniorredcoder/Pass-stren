@@ -5,7 +5,7 @@ import os
 
 os.system('clear')
 os.system('figlet Pass-Stren | lolcat')
-print(Fore.CYAN + "                                         CREATED BY G-ONE")
+print(Fore.CYAN + "                                         CODED BY G-ONE")
 print(Fore.CYAN + "                                         Version:1.0.1")
 class PasswordTester():
     def __init__(self):
@@ -180,7 +180,7 @@ zxcvbnm
         return self.timeToCrackList[self.strength]
         
     def passwordInfo(self):
-        return "Password length: {0}\nLower case: {1}\nUpper case: {2}\nNumbers: {3}\nSymbols: {4}".\
+        return Fore.GREEN+"Password length: {0}\nLower case: {1}\nUpper case: {2}\nNumbers: {3}\nSymbols: {4}".\
         format(self.passwordLength,self.ContainsLowerCase,self.ContainsUpperCase,self.ContainsNumbers,\
         self.ContainsSymbols)
         
@@ -188,7 +188,7 @@ while True:
         tester = PasswordTester()
         password = input(Fore.CYAN + "Enter password to check password strength:")
         tester.testStrength(password)
-        print("Time to crack: {}".format(tester.timeToCrack()))
+        print(Fore.GREEN+"Time to crack: {}".format(tester.timeToCrack()))
         print("\n" + tester.passwordInfo())
     
         if(tester.BadPassword):
