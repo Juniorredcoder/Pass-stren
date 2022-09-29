@@ -14,7 +14,7 @@ cd Pass-stren
 
 chmod +x *
 
-bash pass-check.py
+python3 pass-check.py
 
 # In Linux
 apt install figlet
@@ -27,4 +27,4 @@ cd Pass-stren
 
 chmod +x *
 
-bash pass-check.py
+python3 pass-check.py
